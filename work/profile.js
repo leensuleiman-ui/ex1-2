@@ -1,57 +1,80 @@
 /**
- * Author: Leen Suleiman, malak hariri , monia sgaiar
- * Date: 22/06/2026
- * File: profile.js
- * Description:
- * Reads profile data from private/profile-data.json
- * and creates public/profile.json.
- *
- * Imported modules:
- * fs
- * path
- */
+
+* Author: Leen Suleiman, Malak Hariri, Monia Sgaiar
+* Date: 24/06/2026
+* File: work/profile.js
+*
+* Description:
+* Reads profile data from private/profile-data.json
+* and generates public/profile.json.
+*
+* Imported Modules:
+* * fs
+* * path
+    */
 
 const fs = require('fs');
 const path = require('path');
 
-const privateFile = path.join(
-    __dirname,
-    '..',
-    'private',
-    'profile-data.json'
-);
+/**
 
-const publicFile = path.join(
-    __dirname,
-    '..',
-    'public',
-    'profile.json'
-);
+* Path to source file.
+  */
+  const privateFilePath = path.join(
+  __dirname,
+  '..',
+  'private',
+  'profile-data.json'
+  );
+
+/**
+
+* Path to generated file.
+  */
+  const publicFilePath = path.join(
+  __dirname,
+  '..',
+  'public',
+  'profile.json'
+  );
 
 try {
 
-    const profileData =
-        fs.readFileSync(
-            privateFile,
-            'utf8'
-        );
+```
+const profileData = fs.readFileSync(
+    privateFilePath,
+    'utf8'
+);
 
-    fs.writeFileSync(
-        publicFile,
-        profileData,
-        'utf8'
-    );
+const parsedData = JSON.parse(
+    profileData
+);
 
-    console.log(
-        'profile.json created successfully'
-    );
+fs.writeFileSync(
+    publicFilePath,
+    JSON.stringify(
+        parsedData,
+        null,
+        4
+    ),
+    'utf8'
+);
+
+console.log(
+    'profile.json created successfully'
+);
+```
 
 }
 catch (error) {
 
-    console.error(
-        'Error:',
-        error.message
-    );
+```
+console.error(
+    'Error creating profile.json:',
+    error.message
+);
+
+process.exit(1);
+```
 
 }
