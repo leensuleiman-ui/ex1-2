@@ -1,110 +1,72 @@
 <!DOCTYPE html>
 <!--
-Author: Leen Suleiman , Malak Hariri , Monia Sgaiar
-Date: 23/06/2026
-File: profile.html
-
-Description:
-HTML template for the personal profile website.
-The content is loaded dynamically from profile.json.
+    Author: Leen Suleiman, Malak Hariri, Monia Sgaiar
+    Date: 24/06/2026
+    File: public/profile.html
+    Description:
+        HTML structure for the personal profile website.
+        Content is loaded dynamically from profile.json
+        via client-side JavaScript (profile.js).
 -->
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leen Suleiman Profile</title>
-
-    <link rel="stylesheet"
-        href="profile.css">
-
+    <link rel="stylesheet" href="profile.css">
 </head>
-
 <body>
 
-    <header id="banner"
-        class="banner">
-    </header>
+    <header id="banner" class="banner"></header>
 
     <main class="container">
 
         <img id="profile-image"
-            class="profile-image"
-            src=""
-            alt="Profile Image">
+             class="profile-image"
+             src=""
+             alt="Profile Image">
 
         <h1 id="full-name"></h1>
-
         <h2 id="title"></h2>
-
-        <p id="bio"></p>
+        <p  id="bio"></p>
 
         <section class="card">
-
             <h3>Education</h3>
-
             <div id="education"></div>
-
         </section>
 
         <section class="card">
-
             <h3>Languages</h3>
-
             <ul id="languages-list"></ul>
-
         </section>
 
         <section class="card">
-
             <h3>Technical Skills</h3>
-
             <ul id="technical-skills-list"></ul>
-
         </section>
 
         <section class="card">
-
             <h3>Soft Skills</h3>
-
             <ul id="soft-skills-list"></ul>
-
         </section>
 
         <section class="card">
-
             <h3>Contact</h3>
-
             <p id="email"></p>
-
         </section>
 
         <section class="card">
-
             <h3>Links</h3>
-
             <div id="links-list"></div>
-
         </section>
 
         <section class="card">
-
             <h3>Gallery</h3>
-
-            <div id="gallery"
-                class="gallery"></div>
-
+            <div id="gallery" class="gallery"></div>
         </section>
 
     </main>
 
     <script src="profile.js"></script>
-
 </body>
-
 </html>

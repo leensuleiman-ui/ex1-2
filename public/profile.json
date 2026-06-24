@@ -1,22 +1,17 @@
 {
   "fullName": "Leen Suleiman",
-
   "title": "Information Systems Student | Technology & Data Enthusiast",
-
   "bio": "I am an Information Systems student at Zefat Academic College with a strong interest in software development, databases, data analysis, and business information systems. I enjoy learning new technologies, solving problems, and working collaboratively on innovative projects. My academic journey has helped me develop both technical and analytical skills that prepare me for future challenges in the technology industry.",
-
   "education": {
     "college": "Zefat Academic College",
     "department": "Information Systems",
     "year": "Third Year Student"
   },
-
   "languages": [
     "Arabic",
     "Hebrew",
     "English"
   ],
-
   "technicalSkills": [
     "Python",
     "Java",
@@ -28,7 +23,6 @@
     "Object-Oriented Programming (OOP)",
     "Priority ERP System"
   ],
-
   "softSkills": [
     "Problem Solving",
     "Teamwork",
@@ -36,9 +30,7 @@
     "Time Management",
     "Critical Thinking"
   ],
-
   "email": "leen.suleiman.g@gmail.com",
-
   "links": [
     {
       "label": "GitHub",
@@ -49,11 +41,8 @@
       "url": "https://www.linkedin.com/in/leen-suleiman-3a767a393"
     }
   ],
-
   "profileImage": "profile.png",
-
   "bannerImage": "banner.jpg",
-
   "gallery": [
     "gallery1.jpg",
     "gallery2.jpg",
